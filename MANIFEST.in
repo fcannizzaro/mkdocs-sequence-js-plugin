@@ -1,0 +1,3 @@
+include mkdocs_sequence_js_plugin/css/*
+include mkdocs_sequence_js_plugin/js/*
+include mkdocs_sequence_js_plugin/libs/*

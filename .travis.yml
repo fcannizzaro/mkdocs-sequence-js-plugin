@@ -1,0 +1,28 @@
+language: python
+python:
+  - 3.6
+dist: trusty
+sudo: false
+
+branches:
+  only:
+  - master
+
+install:
+  - pip install mkdocs
+  - pip install pygments
+  - pip install mkdocs-material
+  - python setup.py install
+
+before_script: cd sample
+
+script:
+  - python -m mkdocs build
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: sample/site/
+  on:
+    branch: master

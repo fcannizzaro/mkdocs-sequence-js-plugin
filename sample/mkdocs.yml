@@ -1,0 +1,10 @@
+site_name: MkDocs Sequence.js Plugin
+markdown_extensions:
+  - codehilite
+theme:
+  name: 'material'
+plugins:
+  - search
+  - sequence-js:
+      theme: simple
+      popup: true
