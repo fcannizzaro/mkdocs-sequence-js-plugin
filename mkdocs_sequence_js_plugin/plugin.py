@@ -48,6 +48,8 @@ class SequenceJsPlugin(BasePlugin):
         return ''.join(output)
 
     def on_post_page(self, html, page, **kwargs):
+        if not self.js[page.url]:
+            return html
         return append_dependencies(append_script(html, make_script(self.js[page.url])), self.config['popup'])
 
     def on_files(self, files, config):

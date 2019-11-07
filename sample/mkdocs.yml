@@ -1,4 +1,4 @@
-site_name: MkDocs Sequence.js Plugin
+site_name: MkDocs Sequence Plugin
 markdown_extensions:
   - codehilite
 theme:
@@ -8,3 +8,7 @@ plugins:
   - sequence-js:
       theme: simple
       popup: true
+
+nav:
+    - 'Plugin': 'index.md'
+    - 'Depencies': 'dependencies.md'
