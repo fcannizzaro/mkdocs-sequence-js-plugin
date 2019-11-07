@@ -8,7 +8,7 @@ DEPENDENCIES = """
 	<link rel="stylesheet" type="text/css" href="{0}/css/style.css"> 
 """
 
-POPUP_SCRIPT = "<script src='js/diagram.js'></script>"
+POPUP_SCRIPT = "<script src='/js/diagram.js'></script>"
 
 SEQUENCE_REGEX = r"((~*\n?)```sequence\n([^`]+)\n```)"
 
