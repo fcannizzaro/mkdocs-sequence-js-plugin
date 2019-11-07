@@ -1,11 +1,11 @@
 import os
 
 DEPENDENCIES = """
-	<script src='/js/webfont.js'></script>
-	<script src='/js/snap.svg-min.js'></script>
-	<script src='/js/underscore-min.js'></script>
-	<script src='/js/sequence-diagram-min.js'></script>
-	<link rel="stylesheet" type="text/css" href="/css/style.css"> 
+	<script src='js/webfont.js'></script>
+	<script src='js/snap.svg-min.js'></script>
+	<script src='js/underscore-min.js'></script>
+	<script src='js/sequence-diagram-min.js'></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css"> 
 """
 
 POPUP_SCRIPT = "<script src='js/diagram.js'></script>"
