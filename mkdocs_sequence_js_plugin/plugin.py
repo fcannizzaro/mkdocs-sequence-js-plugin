@@ -47,10 +47,10 @@ class SequenceJsPlugin(BasePlugin):
 
         return ''.join(output)
 
-    def on_post_page(self, html, page, **kwargs):
+    def on_post_page(self, html, page, config, **kwargs):
         if not self.js[page.url]:
             return html
-        return append_dependencies(append_script(html, make_script(self.js[page.url])), self.config['popup'])
+        return append_dependencies(append_script(html, make_script(self.js[page.url])), self.config['popup'], config.get('site_url', ''))
 
     def on_files(self, files, config):
 
