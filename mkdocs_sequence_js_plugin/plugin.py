@@ -5,7 +5,6 @@ from collections import defaultdict
 from mkdocs.config.config_options import Type
 from mkdocs.plugins import BasePlugin
 from mkdocs.structure.files import File
-from mkdocs.utils import string_types
 
 from .constant import XML, SEQUENCE_REGEX, JS, LIBS_PATH, CSS_PATH, JS_PATH
 from .util import one_line, append_dependencies, append_script, make_script
@@ -15,7 +14,7 @@ FLAGS = re.MULTILINE | re.IGNORECASE | re.UNICODE
 
 class SequenceJsPlugin(BasePlugin):
     config_scheme = (
-        ('theme', Type(string_types, default='simple')),
+        ('theme', Type(str, default='simple')),
         ('popup', Type(bool, default=True)),
     )
 
@@ -54,10 +53,13 @@ class SequenceJsPlugin(BasePlugin):
 
     def on_files(self, files, config):
 
-        files.append(File('style.css', CSS_PATH, config['site_dir'] + '/css/', False))
-        files.append(File('diagram.js', JS_PATH, config['site_dir'] + '/js/', False))
+        files.append(File('style.css', CSS_PATH,
+                          config['site_dir'] + '/css/', False))
+        files.append(File('diagram.js', JS_PATH,
+                          config['site_dir'] + '/js/', False))
 
         for file in os.listdir(LIBS_PATH):
-            files.append(File(file, LIBS_PATH, config['site_dir'] + '/js/', False))
+            files.append(
+                File(file, LIBS_PATH, config['site_dir'] + '/js/', False))
 
         return files

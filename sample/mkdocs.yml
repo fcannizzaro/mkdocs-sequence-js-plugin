@@ -12,5 +12,3 @@ plugins:
 nav:
     - 'Plugin': 'index.md'
     - 'Dependencies': 'dependencies.md'
-    
-site_url: https://fcannizzaro.github.io/mkdocs-sequence-js-plugin/

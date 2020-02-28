@@ -16,6 +16,5 @@ def append_script(html: str, script: str) -> str:
 
 
 def append_dependencies(html: str, popup: bool, site_url: str) -> str:
-    site_url = site_url[:-1] if site_url[-1] == '/' else site_url
     use_popup = '\n' + site_url + POPUP_SCRIPT if popup else ''
     return html.replace('</head>', f'{DEPENDENCIES.format(site_url)}{use_popup}</head>')
