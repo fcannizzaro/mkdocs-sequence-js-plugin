@@ -1,0 +1,478 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-4.6.3">
+    
+    
+      
+        <title>MkDocs Sequence Plugin</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/application.adb8469c.css">
+      
+      
+    
+    
+      <script src="assets/javascripts/modernizr.86422ebf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  
+	<script src='js/webfont.js'></script>
+	<script src='js/snap.svg-min.js'></script>
+	<script src='js/underscore-min.js'></script>
+	<script src='js/sequence-diagram-min.js'></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css"> 
+
+<script src='/js/diagram.js'></script></head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#mkdocs-sequence-js-plugin" tabindex="0" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="." title="MkDocs Sequence Plugin" aria-label="MkDocs Sequence Plugin" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              MkDocs Sequence Plugin
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Plugin
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="." title="MkDocs Sequence Plugin" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    MkDocs Sequence Plugin
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Plugin
+      </label>
+    
+    <a href="." title="Plugin" class="md-nav__link md-nav__link--active">
+      Plugin
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-1" class="md-nav__link">
+    Example 1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-2" class="md-nav__link">
+    Example 2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-3" class="md-nav__link">
+    Example 3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-4" class="md-nav__link">
+    Example 4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#author" class="md-nav__link">
+    Author
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="dependencies/" title="Dependencies" class="md-nav__link">
+      Dependencies
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-1" class="md-nav__link">
+    Example 1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-2" class="md-nav__link">
+    Example 2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-3" class="md-nav__link">
+    Example 3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-4" class="md-nav__link">
+    Example 4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#author" class="md-nav__link">
+    Author
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="mkdocs-sequence-js-plugin">mkdocs-sequence-js-plugin</h1>
+<p><a href="https://travis-ci.org/fcannizzaro/mkdocs-sequence-js-plugin"><img alt="Build Status" src="https://travis-ci.org/fcannizzaro/mkdocs-sequence-js-plugin.svg?branch=master" /></a></p>
+<p>MkDocs plugin to render <a href="https://bramp.github.io/js-sequence-diagrams/">js-sequence-diagrams</a> blocks</p>
+<h2 id="usage">Usage</h2>
+<div class="codehilite"><pre><span></span><code><span class="nt">plugins</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="nt">sequence-js</span><span class="p">:</span>
+      <span class="nt">theme</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">simple|hand</span>      <span class="c1"># diagram style</span>
+      <span class="nt">popup</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>             <span class="c1"># enable &quot;click to zoom&quot; diagram</span>
+</code></pre></div>
+
+
+<h2 id="example-1">Example 1</h2>
+<div class="codehilite"><pre><span></span><code><span class="err">```sequence</span>
+<span class="err">Andrew-&gt;China: Says Hello</span>
+<span class="err">Note right of China: China thinks \n about it</span>
+<span class="err">China--&gt;Andrew: How are you?</span>
+<span class="err">Andrew-&gt;&gt;China: I am good thanks!</span>
+<span class="err">```</span>
+</code></pre></div>
+
+
+<div title="Click to zoom" class="scrollable-diagram" id="diagram#1"></div>
+
+<h2 id="example-2">Example 2</h2>
+<div class="codehilite"><pre><span></span><code><span class="err">```sequence</span>
+<span class="c">Title: Here is a title</span>
+<span class="err">A-&gt;B: Normal line</span>
+<span class="err">B--&gt;C: Dashed line</span>
+<span class="err">C-&gt;&gt;D: Open arrow</span>
+<span class="err">D--&gt;&gt;A: Dashed open arrow</span>
+<span class="err">```</span>
+</code></pre></div>
+
+
+<div title="Click to zoom" class="scrollable-diagram" id="diagram#3"></div>
+
+<h2 id="example-3">Example 3</h2>
+<div class="codehilite"><pre><span></span><code><span class="err">```sequence</span>
+<span class="err"># Example of a comment.</span>
+<span class="err">Note left of A: Note to the \n left of A</span>
+<span class="err">Note right of A: Note to the \n right of A</span>
+<span class="err">Note over A: Note over A</span>
+<span class="err">Note over A,B: Note over both A and B</span>
+<span class="err">```</span>
+</code></pre></div>
+
+
+<div title="Click to zoom" class="scrollable-diagram" id="diagram#5"></div>
+
+<h2 id="example-4">Example 4</h2>
+<div class="codehilite"><pre><span></span><code><span class="err">```sequence</span>
+<span class="err">participant C</span>
+<span class="err">participant B</span>
+<span class="err">participant A</span>
+<span class="err">Note right of A: By listing the participants \n you can change their order</span>
+<span class="err">```</span>
+</code></pre></div>
+
+
+<div title="Click to zoom" class="scrollable-diagram" id="diagram#7"></div>
+
+<h2 id="author">Author</h2>
+<p>Francesco Saverio Cannizzaro (fcannizzaro)</p>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+        
+          <a href="dependencies/" title="Dependencies" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Dependencies
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/application.c33a9706.js"></script>
+      
+      <script>app.initialize({version:"1.1",url:{base:"."}})</script>
+      
+    
+  <script>Diagram.parse(`Andrew->China: Says Hello\nNote right of China: China thinks \\n about it\nChina-->Andrew: How are you?\nAndrew->>China: I am good thanks!`).drawSVG("diagram#1", {theme: 'simple'})
+Diagram.parse(`Title: Here is a title\nA->B: Normal line\nB-->C: Dashed line\nC->>D: Open arrow\nD-->>A: Dashed open arrow`).drawSVG("diagram#3", {theme: 'simple'})
+Diagram.parse(`# Example of a comment.\nNote left of A: Note to the \\n left of A\nNote right of A: Note to the \\n right of A\nNote over A: Note over A\nNote over A,B: Note over both A and B`).drawSVG("diagram#5", {theme: 'simple'})
+Diagram.parse(`participant C\nparticipant B\nparticipant A\nNote right of A: By listing the participants \\n you can change their order`).drawSVG("diagram#7", {theme: 'simple'})</script></body>
+</html>

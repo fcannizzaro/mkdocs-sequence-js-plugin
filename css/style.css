@@ -1,0 +1,22 @@
+.scrollable-diagram {
+	overflow-x: auto;
+	cursor: pointer;
+}
+
+.scrollable-diagram svg.sequence {
+	max-width: none;
+}	
+
+.fullscreen-diagram {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 9999;
+	background: white;
+	left: 0;
+	top: 0;
+	padding: 16px;
+}
